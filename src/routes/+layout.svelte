@@ -43,7 +43,7 @@
 	main {
 		display: flex;
 		flex-grow: 1;
-		padding: 30px;
+		padding: 30px 0;
 		background: #2d3242;
 		color: #fff;
 	}
@@ -65,6 +65,12 @@
 		}
 		100% {
 			background-position: 0% 50%;
+		}
+	}
+
+	@media (max-width: 390px) {
+		h1 {
+			font-size: 26px;
 		}
 	}
 </style>

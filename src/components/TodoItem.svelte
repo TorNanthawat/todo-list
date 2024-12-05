@@ -72,6 +72,7 @@
 		justify-content: space-between;
 		margin-bottom: 10px;
 		height: 20px;
+		width: 400px;
 		padding: 10px;
 		border-radius: 20px;
 		background-color: white;
@@ -180,5 +181,26 @@
 	.delete-btn:hover {
 		background-color: rgb(197, 0, 0);
 		box-shadow: 1px 1px 10px rgb(255, 39, 39);
+	}
+
+	@media (max-width: 618px) {
+		.todo-item {
+			width: 100%;
+		}
+
+		input[type='text'] {
+			font-size: 12px;
+		}
+
+		#todo-text {
+			font-size: 12px;
+		}
+
+		.status {
+			margin-right: 50px;
+			cursor: default;
+			font-size: 10px;
+			text-align: center;
+		}
 	}
 </style>

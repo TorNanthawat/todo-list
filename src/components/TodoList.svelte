@@ -24,4 +24,21 @@
 	p {
 		text-align: center;
 	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: 0;
+		margin-bottom: 30px;
+		transition: 0.3s;
+	}
+
+	@media (max-width: 618px) {
+		div {
+			width: 65%;
+		}
+	}
 </style>

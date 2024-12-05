@@ -11,16 +11,25 @@
 			text = '';
 		}
 	};
+
+	// ฟังก์ชันที่ใช้สำหรับการกด Enter เพื่อเพิ่ม Todo
+	const handleKeydown = (event: KeyboardEvent) => {
+		if (event.key === 'Enter') {
+			addTodo();
+		}
+	};
 </script>
 
 <div>
-	<input type="text" bind:value={text} placeholder="เพิ่มรายการใหม่" />
+	<input type="text" bind:value={text} on:keydown={handleKeydown} placeholder="เพิ่มรายการใหม่" />
 	<button class="add-btn" on:click={addTodo}>เพิ่ม</button>
 </div>
 
 <style>
 	div {
 		display: flex;
+		justify-content: center;
+		width: 100%;
 		gap: 0;
 		margin-bottom: 30px;
 		transition: 0.3s;
@@ -32,7 +41,7 @@
 	input {
 		margin: 0;
 		border: 0;
-		width: 300px;
+		width: 400px;
 		height: 40px;
 		padding-left: 15px;
 		border-top-left-radius: 20px;
@@ -52,5 +61,11 @@
 		width: 80px;
 		height: 42px;
 		padding: 10px 10px 10px 0;
+	}
+
+	@media (max-width: 618px) {
+		div {
+			width: 80%;
+		}
 	}
 </style>

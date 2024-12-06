@@ -190,6 +190,8 @@
 
 		input[type='text'] {
 			font-size: 12px;
+			width: 100px;
+			margin: 0 15px;
 		}
 
 		#todo-text {

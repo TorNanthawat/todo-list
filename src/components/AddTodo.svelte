@@ -48,6 +48,8 @@
 		padding: 0 15px;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
 		font-family: 'Kanit', sans-serif;
 		outline: none;
 		transition: 0.3s;
